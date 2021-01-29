@@ -1,4 +1,4 @@
-namespace CorreiosSRO {
+namespace CorreiosAPI.SRO.Model {
     public class SROObjeto {
         public string Numero { get; set; }
         public string Sigla { get; set; }

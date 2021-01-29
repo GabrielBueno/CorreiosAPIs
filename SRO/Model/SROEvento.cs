@@ -1,4 +1,4 @@
-namespace CorreiosSRO {
+namespace CorreiosAPI.SRO.Model {
     public class SROEvento {
         public string Tipo { get; set ;}
         public string Status { get; set; }

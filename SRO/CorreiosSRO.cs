@@ -1,9 +1,10 @@
 using System;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using CorreiosAPI.SRO.Model;
 using RestSharp;
 
-namespace CorreiosSRO {
+namespace CorreiosAPI.SRO  {
 
     /// <summary>
     /// Classe que agrupa métodos de acesso à API SRO dos Correios
