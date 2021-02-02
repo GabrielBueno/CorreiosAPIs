@@ -85,11 +85,15 @@ namespace CorreiosAPI
         }
 
         static void TestarSRO() {
-            var sro = new CorreiosAPI.SRO.CorreiosSRO();
+            var sro = new CorreiosAPI.SRO.CorreiosSRO("S9INFORM", "XT0ziRyh");
+
+            var lista = sro.BuscaEventosLista("ON440549803BR");
+
+            Console.WriteLine("");
         }
 
         static void Main(string[] args) {
-            TestarSigep();
+            TestarSRO();
         }
     }
 }

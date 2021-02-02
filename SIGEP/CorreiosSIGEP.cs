@@ -55,18 +55,20 @@ namespace CorreiosAPI.SIGEP {
 
                 return new VerificacaoCep {
                     Existe = true,
-                    Cep = new CepCorreios {
+                    Endereco = new Endereco {
                         Bairro        = cepResponse.Bairro,
                         Cep           = cepResponse.Cep,
                         Cidade        = cepResponse.Cidade,
-                        Endereco      = cepResponse.End,
+                        Logradouro    = cepResponse.End,
                         Complemento   = cepResponse.Complemento,
                         Complemento2  = cepResponse.Complemento2,
                         Uf            = cepResponse.Uf
                     }
                 };
             } catch (System.Exception ex) when (ex is SIGEPFaultException || ex is SIGEPRetornoVazioException) {
-                return new VerificacaoCep { Existe = false, Cep = null };
+                return new VerificacaoCep { Existe = false, Endereco = null };
+            } catch (System.Exception ex) {
+                return new VerificacaoCep { ErroInesperado = ex };
             }
         }
 
