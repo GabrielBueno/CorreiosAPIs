@@ -1,12 +1,12 @@
 namespace CorreiosAPI.SIGEP.Data {
-    public class ServicoAdicional {
+    public class TipoServicoAdicional {
         public string Codigo { get; set; }
         public string Sigla { get; set; }
         public string Descricao { get; set; }
 
-        public ServicoAdicional() {}
+        public TipoServicoAdicional() {}
 
-        public ServicoAdicional(string codigo, string sigla, string descricao) {
+        public TipoServicoAdicional(string codigo, string sigla, string descricao) {
             Codigo    = codigo;
             Sigla     = sigla;
             Descricao = descricao;
