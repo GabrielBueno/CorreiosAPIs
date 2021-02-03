@@ -55,15 +55,6 @@ namespace CorreiosAPI.SIGEP.Validadores {
             Obrigatorio(objeto.Destinatario.Endereco.Cidade,     "A cidade do remetente é obrigatório");
             Obrigatorio(objeto.Destinatario.Endereco.Uf,         "A UF do endereço do remetente é obrigatória");
 
-            Obrigatorio(objeto.ServicosAdicionais,               "Os dados de serviços adicionais do objeto postal são obrigatórios");
-            Obrigatorio(objeto.ServicosAdicionais.TiposServicos, "O serviço adicional 025 (registro nacional) é obrigatório para todas as postagens");
-
-            Existe(
-                algum: TipoServicoAdicional.RegistroNacional(), 
-                em:    objeto.ServicosAdicionais.TiposServicos, 
-                msg:   "O serviço adicional 025 (registro nacional) é obrigatório para todas as postagens"
-            );
-
             Verdade(objeto.CienciaConteudoProibido, "O remetente deve declarar ciência de que o objeto postal não se enquadra como proibido ou restrito");
         }
 

@@ -46,8 +46,13 @@ namespace CorreiosAPI.SIGEP.Data {
             return 11 - resto;
         }
 
-        public override string ToString() {
-            return TipoPostal + Faixa + DigitoVerificador() + Pais;
-        }
+        public string StrComDv()
+            => TipoPostal + Faixa + DigitoVerificador() + Pais;
+
+        public string StrSemDv()
+            => TipoPostal + Faixa + Pais;
+
+        public override string ToString()
+            => StrComDv();
     }
 }
