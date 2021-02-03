@@ -1,4 +1,5 @@
 using System.Xml.Linq;
+using CorreiosAPI.SIGEP.Interfaces;
 
 namespace CorreiosAPI.SIGEP.Request {
     public class BuscaClienteRequest : ISIGEPRequest {

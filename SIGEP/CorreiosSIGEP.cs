@@ -5,6 +5,7 @@ using System.Xml.Linq;
 using System.Xml.Serialization;
 using CorreiosAPI.SIGEP.Data;
 using CorreiosAPI.SIGEP.Exception;
+using CorreiosAPI.SIGEP.Interfaces;
 using CorreiosAPI.SIGEP.Request;
 using CorreiosAPI.SIGEP.Response;
 using RestSharp;

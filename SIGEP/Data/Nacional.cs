@@ -5,6 +5,5 @@ namespace CorreiosAPI.SIGEP.Data {
         public string DescricaoObjeto { get; set; }
         public double ValorACobrar { get; set; }
         public NotaFiscal NotaFiscal { get; set; }
-        public Endereco Endereco { get; set; }
     }
 }

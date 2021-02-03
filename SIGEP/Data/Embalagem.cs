@@ -1,12 +1,7 @@
 using CorreiosAPI.SIGEP.Enum;
+using CorreiosAPI.SIGEP.Interfaces;
 
 namespace CorreiosAPI.SIGEP.Data {
-    public interface IEmbalagem { 
-        DimensoesCm Dimensoes(); 
-        TipoEmbalagem Tipo();
-        string Codigo();
-    }
-
     public class Envelope : IEmbalagem {
         public DimensoesCm Dimensoes() {
             return new DimensoesCm {

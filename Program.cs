@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using CorreiosAPI.SIGEP.Data;
 using CorreiosAPI.SIGEP.Exception;
 
 namespace CorreiosAPI
@@ -93,7 +94,11 @@ namespace CorreiosAPI
         }
 
         static void Main(string[] args) {
-            TestarSRO();
+            // TestarSRO();
+            var ts1 = new TipoServicoAdicional("025", "AL", "asdasd");
+            var ts2 = new TipoServicoAdicional("025", "AL", "asdasd");
+
+            Console.WriteLine(ts1.Eq(ts2));
         }
     }
 }

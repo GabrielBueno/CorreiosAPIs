@@ -1,3 +1,5 @@
+using CorreiosAPI.SIGEP.Interfaces;
+
 namespace CorreiosAPI.SIGEP.Data {
     public class Remetente {
         public string Nome { get; set; }

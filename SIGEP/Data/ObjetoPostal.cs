@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using CorreiosAPI.SIGEP.Interfaces;
 
 namespace CorreiosAPI.SIGEP.Data {
     public class ObjetoPostal {
@@ -13,6 +14,7 @@ namespace CorreiosAPI.SIGEP.Data {
         public int? NumeroComprovantePostagem { get; set; }
         public double? ValorCobrado { get; set; }
         public DateTime? DataPostagem { get; set; }
+        public Destinatario Destinatario { get; set; }
         public ServicoPostagem ServicoPostagem { get; set; }
         public EtiquetaCorreios Etiqueta { get; set; }
         public IEmbalagem Embalagem { get; set; } 

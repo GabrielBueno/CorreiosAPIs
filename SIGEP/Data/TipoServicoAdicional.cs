@@ -1,5 +1,7 @@
+using CorreiosAPI.SIGEP.Interfaces;
+
 namespace CorreiosAPI.SIGEP.Data {
-    public class TipoServicoAdicional {
+    public class TipoServicoAdicional : IEq {
         public string Codigo { get; set; }
         public string Sigla { get; set; }
         public string Descricao { get; set; }
@@ -11,6 +13,12 @@ namespace CorreiosAPI.SIGEP.Data {
             Sigla     = sigla;
             Descricao = descricao;
         }
+
+        public bool Eq(IEq some)
+            => some.Eq(this);
+
+        public bool Eq(TipoServicoAdicional ts)
+            => ts.Codigo.Trim() == Codigo.Trim();
 
         public static TipoServicoAdicional AvisoDeRecebimento()
             => new TipoServicoAdicional("001", "AR", "Aviso de recebimento");
