@@ -86,7 +86,7 @@ namespace CorreiosAPI
         }
 
         static void TestarSRO() {
-            var sro = new CorreiosAPI.SRO.CorreiosSRO("S9INFORM", "XT0ziRyh");
+            var sro = new CorreiosAPI.SRO.CorreiosSRO("0506232600", "ERV1>T8W5B");
 
             var lista = sro.BuscaEventosLista("ON440549803BR");
 
@@ -94,11 +94,7 @@ namespace CorreiosAPI
         }
 
         static void Main(string[] args) {
-            // TestarSRO();
-            var ts1 = new TipoServicoAdicional("025", "AL", "asdasd");
-            var ts2 = new TipoServicoAdicional("025", "AL", "asdasd");
-
-            Console.WriteLine(ts1.Eq(ts2));
+            TestarSRO();
         }
     }
 }
