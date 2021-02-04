@@ -6,6 +6,5 @@ namespace CorreiosAPI.Models {
         public Pessoa Remetente { get; set; }
         public ObjetoPostal ObjetoPostal { get; set; }
         public FormaPagamento FormaPagamento { get; set; }
-        public bool RemetenteCienteConteudoProibido { get; set; }
     }
 }
