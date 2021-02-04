@@ -1,4 +1,6 @@
-namespace CorreiosAPI.Utils {
+using CorreiosAPI.Models.Geometria;
+
+namespace CorreiosAPI.Models.Embalagem {
     public class Cilindro : IEmbalagem {
         public float Comprimento { get; set; }
         public float Diametro { get; set; }

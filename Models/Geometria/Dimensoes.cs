@@ -1,4 +1,4 @@
-namespace CorreiosAPI.Utils {
+namespace CorreiosAPI.Models.Geometria {
     public class Dimensoes {
         public float Altura { get; set; }
         public float Largura { get; set; }
